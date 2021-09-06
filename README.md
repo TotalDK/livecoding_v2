@@ -9,6 +9,10 @@ To get started, check that Python is installed in your shell:
 ```
 python --version
 ```
+or
+```
+python3 --version
+```
 
 If not, install it:
 ```
