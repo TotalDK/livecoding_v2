@@ -13,6 +13,6 @@ python --version
 If not, install it:
 ```
 sudo apt update && sudo apt upgrade
-sudo apt install python3 python3-pip ipython3
+sudo apt install python3 python3-pip
 ```
 *If the command throws an error, try with `apt-get` instead of `apt`*
