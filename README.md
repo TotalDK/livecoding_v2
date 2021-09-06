@@ -1,6 +1,8 @@
 # Live Coding repository
-Material from Live Coding sessions will be uploaded here.
+**Material from Live Coding sessions will be uploaded here.**
 
+
+## Getting started
 To get started, check that Python is installed in your shell:
 ```
 python --version
