@@ -10,12 +10,40 @@
 
 from statistics import mean
 
-
-
 def specialmean(n):
-	#Actual code will be uploaded after the Coding Re-test
-	return
+    if isinstance(n, int):
+        if n <= 0:
+            return 0
+        else:
+            simple = [*range(1,n+1)]
+            for i in range(1, n+1):
+                simple.append(2**i)
+            
+            me = mean(simple)
+            return me
+    return 0
+
+#print(specialmean(-1))
 
 def read_csv(filename):
-	#Actual code will be uploaded after the Coding Re-test
-	return
+	
+	lists = []
+	with open(filename, "r") as infile:
+		for line in infile:
+			lists.append(line.strip().split(","))
+
+	dictionary = {}
+	for item in lists[0]:
+		dictionary[item]= []
+
+	
+	head = lists[0]
+	
+	for i in range(len(head)):
+		for line in lists[1:]:
+			dictionary[head[i]].append(line[i])
+	return dictionary
+
+
+
+
